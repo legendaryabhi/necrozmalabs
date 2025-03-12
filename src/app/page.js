@@ -1,103 +1,65 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.js
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <div className="bg-black min-h-screen text-white px-6 md:px-12">
+      <h1 className="md:text-4xl text-lg mt-16">
+        Creating things to push the human race forward.
+      </h1>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+      {/* Top Section: One Big Card + Two Vertical Cards */}
+      <div className="flex flex-col md:flex-row h-screen gap-6 mb-40 pt-16">
+        {/* Big Card on Left */}
+        <Link href="/Nfuse" className="md:w-4/5 flex flex-col">
+          <div className="w-full min-h-[300px] md:h-full relative rounded-lg overflow-hidden">
+            <Image src="/img1.jpeg" alt="Big Card" layout="fill" objectFit="cover" />
+          </div>
+          <h2 className="text-xl font-bold mt-4">Project Nfuse</h2>
+        </Link>
+
+        {/* Two Equal-Height Cards on Right */}
+        <div className="md:w-1/5 flex flex-col gap-4 h-full">
+          <Link href="/ViewAI" className="flex flex-col flex-1">
+            <div className="w-full min-h-[150px] md:h-full relative rounded-lg overflow-hidden">
+              <Image src="/img2.jpeg" alt="Card 1" layout="fill" objectFit="cover" />
+            </div>
+            <h2 className="text-lg font-bold mt-4">View AI</h2>
+          </Link>
+
+          <Link href="BuildY" className="flex flex-col flex-1">
+            <div className="w-full min-h-[150px] md:h-full relative rounded-lg overflow-hidden">
+              <Image src="/img3.jpeg" alt="Card 2" layout="fill" objectFit="cover" />
+            </div>
+            <h2 className="text-lg font-bold mt-4 ">Build Y</h2>
+          </Link>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </div>
+
+      <h1 className="md:text-4xl text-lg md:mt-28 mb-20">The Stories we stand for:</h1>
+      {/* Bottom Section: Three Horizontal Cards */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+        <Link href="/Stories/why-we-started" className="flex flex-col">
+          <div className="w-full h-40 relative rounded-lg overflow-hidden">
+            <Image src="/img4.jpeg" alt="how-we-started" layout="fill" objectFit="cover" />
+          </div>
+          <h2 className="text-lg font-bold mt-4">Why We Started</h2>
+        </Link>
+
+        <Link href="/Stories/why-sustainable-energy-matters" className="flex flex-col">
+          <div className="w-full h-40 relative rounded-lg overflow-hidden">
+            <Image src="/img5.jpeg" alt="why-sustanible-energy-matters" layout="fill" objectFit="cover" />
+          </div>
+          <h2 className="text-lg font-bold mt-4">Why Sustanible Energy Matters</h2>
+        </Link>
+
+        <Link href="/Stories/how-we-work" className="flex flex-col">
+          <div className="w-full h-40 relative rounded-lg overflow-hidden">
+            <Image src="/img6.jpeg" alt="Card 5" layout="fill" objectFit="cover" />
+          </div>
+          <h2 className="text-lg font-bold mt-4">How We Work</h2>
+        </Link>
+      </div>
     </div>
   );
 }
