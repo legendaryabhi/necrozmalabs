@@ -13,6 +13,12 @@ export default function Footer() {
             <li><Link href="mailto:abhinav@necrozmalabs.com" className="hover:text-gray-400">Press</Link></li>
             <li><Link href="mailto:abhinav@necrozmalabs.com" className="hover:text-gray-400">Contact</Link></li>
           </ul>
+          <h3 className="text-lg font-semibold mt-4 md:mt-8 mb-4">Founder</h3>
+          <ul className="space-y-2">
+            <li><Link href="https://www.linkedin.com/in/abhinavsharma07/" className="hover:text-gray-400">LinkedIn</Link></li>
+            <li><Link href="https://x.com/abhinavsharma_x" className="hover:text-gray-400">X</Link></li>
+            <li><Link href="mailto:abhinav@necrozmalabs.com" className="hover:text-gray-400">E-Mail</Link></li>
+          </ul>
         </div>
 
         {/* Column 2 */}
@@ -23,6 +29,12 @@ export default function Footer() {
             <li><Link href="/BuildY" className="hover:text-gray-400">Build Y</Link></li>
             <li><Link href="/ViewAI" className="hover:text-gray-400">View AI</Link></li>
           </ul>
+          <h3 className="text-lg font-semibold mt-4 md:mt-8 mb-4">Build Y</h3>
+          <ul className="space-y-2">
+            <li><Link href="https://buildy.necrozmalabs.com/updates/" className="hover:text-gray-400">Updates</Link></li>
+            <li><Link href="https://buildy.necrozmalabs.com/story-we-stand-for/" className="hover:text-gray-400">Why created</Link></li>
+            <li><Link href="https://github.com/Necrozmalabs/buildY" className="hover:text-gray-400">Github</Link></li>
+          </ul>
         </div>
 
         {/* Column 3 */}
@@ -31,7 +43,12 @@ export default function Footer() {
           <ul className="space-y-2">
             <li><Link href="https://x.com/Necrozmalabs" className="hover:text-gray-400">X</Link></li>
             <li><Link href="https://www.linkedin.com/company/necrozmalabs" className="hover:text-gray-400">LinkedIn</Link></li>
-            <li><Link href="https://github.com/Necrozmalabs" className="hover:text-gray-400">GitHub</Link></li>
+            <li><Link href="https://github.com/Necrozmalabs" className="hover:text-gray-400">Github</Link></li>
+          </ul>
+          <h3 className="text-lg font-semibold mt-4 md:mt-8 mb-4">Build Y Social</h3>
+          <ul className="space-y-2">
+            <li><Link href="https://x.com/buildY_HQ" className="hover:text-gray-400">X</Link></li>
+            <li><Link href="https://www.linkedin.com/company/build-y" className="hover:text-gray-400">LinkedIn</Link></li>
           </ul>
         </div>
 

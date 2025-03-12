@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="bg-black min-h-screen text-white px-6 md:px-12">
+    <div className="bg-black min-h-screen text-white px-6 md:px-2">
       <h1 className="md:text-4xl text-lg mt-16">
         Creating things to push the human race forward.
       </h1>
@@ -60,6 +60,15 @@ export default function Home() {
           <h2 className="text-lg font-bold mt-4">How We Work</h2>
         </Link>
       </div>
+      <div className="w-full h-[50vh] bg-gray-900 flex flex-col items-center justify-center text-center mt-20 p-6">
+        <h2 className="text-2xl md:text-4xl font-bold">Created for Engineers and Scientists</h2>
+        <Link href="https://buildy.necrozmalabs.com/">
+          <button className="mt-6 px-6 py-3 text-lg font-semibold bg-gray-800 text-white rounded-lg shadow-lg hover:bg-gray-950 transition">
+            Visit Build Y
+          </button>
+        </Link>
+      </div>
+      
     </div>
   );
 }
