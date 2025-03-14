@@ -13,7 +13,7 @@ export default function Home() {
         {/* Big Card on Left */}
         <Link href="/Nfuse" className="md:w-4/5 w-full">
           <div className="w-full h-60 md:h-[550px] relative rounded-lg overflow-hidden">
-            <Image src="/img1.jpeg" alt="Big Card" layout="fill" objectFit="cover" />
+            <Image src="/img1.jpeg" alt="" layout="fill" objectFit="cover" />
           </div>
           <h2 className="text-xl font-bold mt-4 text-center md:text-left">Project Nfuse</h2>
         </Link>
@@ -22,14 +22,14 @@ export default function Home() {
         <div className="md:w-1/5 w-full flex flex-col gap-6">
           <Link href="/ViewAI" className="w-full">
             <div className="w-full h-48 md:h-60 relative rounded-lg overflow-hidden">
-              <Image src="/img2.jpeg" alt="Card 1" layout="fill" objectFit="cover" />
+              <Image src="/img2.jpeg" alt="" layout="fill" objectFit="cover" />
             </div>
             <h2 className="text-lg font-bold mt-4 text-center md:text-left">View AI</h2>
           </Link>
 
           <Link href="/BuildY" className="w-full">
             <div className="w-full h-48 md:h-60 relative rounded-lg overflow-hidden">
-              <Image src="/img3.jpeg" alt="Card 2" layout="fill" objectFit="cover" />
+              <Image src="/img3.jpeg" alt="" layout="fill" objectFit="cover" />
             </div>
             <h2 className="text-lg font-bold mt-4 text-center md:text-left">Build Y</h2>
           </Link>
@@ -55,7 +55,7 @@ export default function Home() {
 
         <Link href="/Stories/how-we-work" className="flex flex-col">
           <div className="w-full h-40 relative rounded-lg overflow-hidden">
-            <Image src="/img6.jpeg" alt="Card 5" layout="fill" objectFit="cover" />
+            <Image src="/img6.jpeg" alt="" layout="fill" objectFit="cover" />
           </div>
           <h2 className="text-lg font-bold mt-4">How We Work</h2>
         </Link>
