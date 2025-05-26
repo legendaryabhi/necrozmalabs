@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.necrozmalabs.com
+
+# Sitemaps
+Sitemap: hhttps://www.necrozmalabs.com/sitemap.xml
