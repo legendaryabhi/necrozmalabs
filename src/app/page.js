@@ -11,7 +11,7 @@ export default function HomePage() {
         {/* Text */}
         <div className="md:w-1/2 text-center md:text-left mb-10 md:mb-0">
           <h1 className="text-4xl md:text-5xl leading-snug">
-            Solving<br /> the World's biggest problems<br /> with Technology
+            Solving<br />World`s biggest problems<br /> with Technology
           </h1>
           <p className="text-lg mt-6">Making Earth Liveable again.</p>
         </div>
@@ -166,7 +166,7 @@ export default function HomePage() {
                 <hr className="w-full border-gray-600 my-4" />
 
                 <span className="text-base md:text-lg text-gray-300 mt-2">
-                  We're Using AI to Lead the Change
+                  We are Using AI to Lead the Change
                 </span>
 
                 <hr className="w-full border-gray-600 my-4" />
