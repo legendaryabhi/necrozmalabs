@@ -1,134 +1,251 @@
-import Image from "next/image";
+"use client";
+
 import Link from "next/link";
+import Image from "next/image";
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <div className="bg-black min-h-screen text-white px-6 md:px-2">
-      <h1 className="md:text-4xl text-lg mt-16">
-        Creating things to push the human race forward.
-      </h1>
+    <div className="text-white w-full p-10 md:p-20 min-h-screen bg-black overflow-x-hidden">
+      {/* Hero Section */}
+      <div className="flex flex-col md:flex-row justify-center items-center mb-20 " style={{ height: "60vh" }}>
+        {/* Text */}
+        <div className="md:w-1/2 text-center md:text-left mb-10 md:mb-0">
+          <h1 className="text-4xl md:text-5xl leading-snug">
+            Solving<br /> the World's biggest problems<br /> with Technology
+          </h1>
+          <p className="text-lg mt-6">Making Earth Liveable again.</p>
+        </div>
 
-      {/* Top Section: One Big Card + Two Vertical Cards */}
-      <div className="flex flex-col md:flex-row gap-6 mb-20 pt-16">
-        {/* Big Card on Left */}
-        <Link href="/Nfuse" className="md:w-4/5 w-full">
-          <div className="w-full h-60 md:h-[550px] relative rounded-lg overflow-hidden group">
-            <Image
-              src="/img1.jpeg"
-              alt="Project Nfuse"
-              fill
-              style={{ objectFit: "cover" }}
-            />
-            <div className="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <p className="text-white text-lg sm:text-3xl font-semibold px-4 text-center">
-                Creating Unlimited Sustainable Energy
-              </p>
-            </div>
-          </div>
-          <h2 className="text-xl font-bold mt-4 text-center md:text-left">
-            Project Nfuse
-          </h2>
-        </Link>
-
-        {/* Two Equal-Height Cards on Right */}
-        <div className="md:w-1/5 w-full flex flex-col gap-6">
-          <Link href="/ViewAI" className="w-full">
-            <div className="w-full h-48 md:h-60 relative rounded-lg overflow-hidden group">
-              <Image
-                src="/img2.jpeg"
-                alt="View AI"
-                fill
-                style={{ objectFit: "cover" }}
-              />
-              <div className="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <p className="text-white text-lg font-semibold px-4 text-center">
-                  Most Advanced A.I System Ever
-                </p>
-              </div>
-            </div>
-            <h2 className="text-lg font-bold mt-4 text-center md:text-left">
-              View AI
-            </h2>
-          </Link>
-
-          <Link href="/BuildY" className="w-full">
-            <div className="w-full h-48 md:h-60 relative rounded-lg overflow-hidden group">
-              <Image
-                src="/img3.jpeg"
-                alt="Build Y"
-                fill
-                style={{ objectFit: "cover" }}
-              />
-              <div className="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <p className="text-white text-lg font-semibold px-4 text-center">
-                  Innovating the way we build
-                </p>
-              </div>
-            </div>
-            <h2 className="text-lg font-bold mt-4 text-center md:text-left">
-              Build Y
-            </h2>
-          </Link>
+        {/* Image */}
+        <div className="md:w-1/2">
+          <img
+            src="/imagebanner.png"
+            alt="Hero"
+            className="rounded-lg shadow-lg object-cover max-h-[500px] mx-auto"
+          />
         </div>
       </div>
 
-      <h1 className="md:text-4xl text-lg md:mt-28 mb-20">
-        The Stories we stand for:
-      </h1>
+      {/* Projects Section */}
+      <div className="w-full py-20">
+        <h1 className="text-2xl md:text-4xl mb-10">Our Projects:</h1>
 
-      {/* Bottom Section: Three Horizontal Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
-        <Link href="/Stories/why-we-started" className="flex flex-col">
-          <div className="w-full h-40 relative rounded-lg overflow-hidden">
-            <Image
-              src="/img4.jpeg"
-              alt="Why We Started"
-              fill
-              style={{ objectFit: "cover" }}
-            />
-          </div>
-          <h2 className="text-lg font-bold mt-4">Why We Started</h2>
-        </Link>
+        <div className="flex flex-col md:flex-row gap-6">
+          {/* Left Big Project */}
+          <Link href="/Nfuse" className="md:w-4/5 w-full">
+            <div className="relative h-60 md:h-[550px] rounded-lg overflow-hidden group">
+              <Image
+                src="/img1.jpeg"
+                alt="Project Nfuse"
+                fill
+                className="object-cover"
+              />
+              <div className="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <p className="text-white text-xl sm:text-3xl font-semibold text-center px-4">
+                  Creating Unlimited Sustainable Energy
+                </p>
+              </div>
+            </div>
+            <h2 className="text-xl font-bold mt-4 text-center md:text-left">
+              Project Nfuse
+            </h2>
+          </Link>
 
-        <Link
-          href="/Stories/why-sustainable-energy-matters"
-          className="flex flex-col"
-        >
-          <div className="w-full h-40 relative rounded-lg overflow-hidden">
-            <Image
-              src="/img5.jpeg"
-              alt="Why Sustainable Energy Matters"
-              fill
-              style={{ objectFit: "cover" }}
-            />
+          {/* Right Two Smaller Projects */}
+          <div className="md:w-1/5 w-full flex flex-col gap-6">
+            <Link href="/ViewAI">
+              <div className="relative h-48 md:h-60 rounded-lg overflow-hidden group">
+                <Image
+                  src="/img2.jpeg"
+                  alt="View AI"
+                  fill
+                  className="object-cover"
+                />
+                <div className="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <p className="text-white text-lg font-semibold text-center px-4">
+                    Most Advanced A.I System Ever
+                  </p>
+                </div>
+              </div>
+              <h2 className="text-lg font-bold mt-4 text-center md:text-left">
+                View AI
+              </h2>
+            </Link>
+
+            <Link href="/BuildY">
+              <div className="relative h-48 md:h-60 rounded-lg overflow-hidden group">
+                <Image
+                  src="/img3.jpeg"
+                  alt="Build Y"
+                  fill
+                  className="object-cover"
+                />
+                <div className="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <p className="text-white text-lg font-semibold text-center px-4">
+                    Innovating the way we build
+                  </p>
+                </div>
+              </div>
+              <h2 className="text-lg font-bold mt-4 text-center md:text-left">
+                Build Y
+              </h2>
+            </Link>
           </div>
-          <h2 className="text-lg font-bold mt-4">
-            Why Sustainable Energy Matters
+        </div>
+
+        {/* Stories Section */}
+        <h1 className="text-2xl md:text-4xl mt-28 mb-10">
+          The Stories we stand for:
+        </h1>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {[
+            {
+              href: "/Stories/why-we-started",
+              src: "/img4.jpeg",
+              title: "Why We Started",
+            },
+            {
+              href: "/Stories/why-sustainable-energy-matters",
+              src: "/img5.jpeg",
+              title: "Why Sustainable Energy Matters",
+            },
+            {
+              href: "/Stories/how-we-work",
+              src: "/img6.jpeg",
+              title: "How We Work",
+            },
+          ].map((story) => (
+            <Link key={story.href} href={story.href} className="flex flex-col">
+              <div className="relative h-40 rounded-lg overflow-hidden">
+                <Image
+                  src={story.src}
+                  alt={story.title}
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <h2 className="text-lg font-bold mt-4">{story.title}</h2>
+            </Link>
+          ))}
+        </div>
+
+        {/* CTA Section */}
+        <div className="w-full h-[50vh] bg-gray-900 flex flex-col items-center justify-center text-center mt-28 rounded-xl shadow-lg p-8">
+          <h2 className="text-2xl md:text-4xl font-bold">
+            Created for Engineers and Scientists
           </h2>
-        </Link>
+          <Link href="https://buildy.necrozmalabs.com/">
+            <button className="mt-6 px-6 py-3 text-lg font-semibold bg-gray-800 text-white rounded-lg hover:bg-gray-950 transition">
+              Visit Build Y
+            </button>
+          </Link>
+        </div>
 
-        <Link href="/Stories/how-we-work" className="flex flex-col">
-          <div className="w-full h-40 relative rounded-lg overflow-hidden">
-            <Image
-              src="/img6.jpeg"
-              alt="How We Work"
-              fill
-              style={{ objectFit: "cover" }}
-            />
+        {/* Placeholder Section */}
+        <div className=" flex mt-20 flex-col">
+          <h2 className="text-white text-2xl md:text-4xl mb-20">Research Areas:</h2>
+
+          <div className="px-4 md:px-12 py-8">
+            <h2 className="text-white text-2xl md:text-4xl mb-6">Clean Energy</h2>
+
+            <div className="flex flex-col md:flex-row gap-8">
+              {/* Image */}
+              <img
+                src="/susbanner.png"
+                alt="image"
+                className="w-full md:w-[60vw] px-10 h-auto rounded-lg"
+              />
+
+              {/* Text Content */}
+              <div className="flex-1 flex flex-col justify-center items-start">
+                <h2 className="text-xl md:text-3xl text-white">
+                  Our Mission: Clean Energy for a Better World
+                </h2>
+
+                <hr className="w-full border-gray-600 my-4" />
+
+                <span className="text-base md:text-lg text-gray-300 mt-2">
+                  We're Using AI to Lead the Change
+                </span>
+
+                <hr className="w-full border-gray-600 my-4" />
+
+                <p className="text-base md:text-lg text-gray-300">
+                  Project Nfuse: Our Flagship Initiative
+                </p>
+
+                <a
+                  href="/Nfuse"
+                  className="mt-6 px-6 py-2 border border-white text-white bg-black hover:bg-gray-900 transition rounded-lg"
+                >
+                  Know More
+                </a>
+              </div>
+            </div>
           </div>
-          <h2 className="text-lg font-bold mt-4">How We Work</h2>
-        </Link>
-      </div>
 
-      <div className="w-full h-[50vh] bg-gray-900 flex flex-col items-center justify-center text-center mt-20 p-6">
-        <h2 className="text-2xl md:text-4xl font-bold">
-          Created for Engineers and Scientists
-        </h2>
-        <Link href="https://buildy.necrozmalabs.com/">
-          <button className="mt-6 px-6 py-3 text-lg font-semibold bg-gray-800 text-white rounded-lg shadow-lg hover:bg-gray-950 transition">
-            Visit Build Y
-          </button>
-        </Link>
+          <div className="mt-20 px-4 md:px-12 py-8">
+  <h2 className="text-white text-2xl md:text-4xl mb-6">Artificial Intelligence</h2>
+
+  <div className="flex flex-col md:flex-row gap-8">
+    <img
+      src="/aibanner.png"
+      alt="Artificial Intelligence"
+      className="w-full md:w-[60vw] h-auto px-10 rounded-lg"
+    />
+
+    <div className="flex-1 flex flex-col justify-center items-start">
+      <h2 className="text-xl md:text-3xl text-white">
+        AI for Scientific and Technological Breakthroughs
+      </h2>
+
+      <hr className="w-full border-gray-600 my-4" />
+
+      <span className="text-base md:text-lg text-gray-300 mt-2">
+        Accelerating Discovery with Artificial Intelligence
+      </span>
+
+      <hr className="w-full border-gray-600 my-4" />
+
+      <p className="text-base md:text-lg text-gray-300">
+        Redefining Possibilities with AI-Driven Research
+      </p>
+    </div>
+  </div>
+</div>
+
+<div className="mt-20 px-4 md:px-12 py-8">
+  <h2 className="text-white text-2xl md:text-4xl mb-6">Quantum Computing</h2>
+
+  <div className="flex flex-col md:flex-row gap-8">
+    <img
+      src="/qcbanner.png"
+      alt="Quantum Computing"
+      className="w-full md:w-[60vw] px-10 h-auto rounded-lg"
+    />
+
+    <div className="flex-1 flex flex-col justify-center items-start">
+      <h2 className="text-xl md:text-3xl text-white">
+        Quantum Computing for Solving the Seemingly Impossible
+      </h2>
+
+      <hr className="w-full border-gray-600 my-4" />
+
+      <span className="text-base md:text-lg text-gray-300 mt-2">
+        Reimagining What is Possible with Quantum Power
+      </span>
+
+      <hr className="w-full border-gray-600 my-4" />
+
+      <p className="text-base md:text-lg text-gray-300">
+        The Next Leap: Unlocking Quantum Solutions for Global Problems
+      </p>
+    </div>
+  </div>
+</div>
+
+        </div>
       </div>
     </div>
   );

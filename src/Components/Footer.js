@@ -12,6 +12,7 @@ export default function Footer() {
             <li><Link href="/About" className="hover:text-gray-400">About Us</Link></li>
             <li><Link href="mailto:abhinav@necrozmalabs.com" className="hover:text-gray-400">Press</Link></li>
             <li><Link href="mailto:abhinav@necrozmalabs.com" className="hover:text-gray-400">Contact</Link></li>
+            <li><Link href="/researchers/abhinavsharma" className="hover:text-gray-400">Researchers</Link></li>
           </ul>
           <h3 className="text-lg font-semibold mt-4 md:mt-8 mb-4">Founder</h3>
           <ul className="space-y-2">

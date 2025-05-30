@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function BuildY() {
   return (
-    <div className="bg-black text-white min-h-screen px-6 md:px-12 py-10">
+    <div className="bg-black text-white min-h-screen px-6 md:px-52 py-30">
       <h1 className="text-4xl font-bold mb-6 text-center md:text-left">
         BuildY
       </h1>

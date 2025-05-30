@@ -109,7 +109,7 @@ Our multi-disciplinary approach, deep belief in open innovation, and commitment 
 
 export default function Nfuse() {
   return (
-    <div className="bg-black text-white min-h-screen px-6 md:px-12 py-10">
+    <div className="bg-black text-white min-h-screen px-6 md:px-12">
       <div className="mx-auto mt-4 max-w-4xl">
         <div
           className="markdown-body"
