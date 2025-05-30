@@ -48,7 +48,7 @@ const Profile = () => {
         <h2 className="text-3xl font-semibold mb-6">About</h2>
         <p className="text-lg text-gray-300 leading-relaxed">
           Abhinav Sharma is a visionary founder passionate about leveraging
-          technology to solve some of the world's biggest challenges. With a strong
+          technology to solve some of the world`s biggest challenges. With a strong
           focus on clean energy, quantum computing, and artificial intelligence,
           Abhinav drives innovative research to make a positive impact globally.
         </p>
