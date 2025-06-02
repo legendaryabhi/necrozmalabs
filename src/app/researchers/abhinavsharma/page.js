@@ -1,9 +1,15 @@
 import React from "react";
 
 const researchesData = [
-  { title: "Tandem Solar Cell", link: "https://www.necrozmalabs.com/papers/Nfuse_cell_paper.pdf" },
+  { title: "NFuse Cell: A High-Efficiency 4-Terminal Perovskite–Silicon Tandem Solar Cell for Next-Generation Sustainable Energy", link: "https://www.necrozmalabs.com/papers/Nfuse_cell_paper.pdf" },
+  { title:"PATTERNS OF SUBCONSCIOUS RECALL: INVESTIGATING HOW THE MIND RETRIEVES AND ENCODES EXPERIENCE", link: "https://www.necrozmalabs.com/papers/Mind_paper.pdf" },
 ];
 
+export const metadata = {
+  title: "Abhinav Sharma | Necrozma Labs Research", 
+  description: "Profile of Abhinav Sharma, founder of Necrozma Labs, focusing on clean energy, quantum computing, and AI research.",
+  keywords: "Abhinav Sharma, Necrozma Labs, clean energy, quantum computing, AI, research"
+}
 
 
 const Profile = () => {
@@ -47,10 +53,7 @@ const Profile = () => {
       <section className="px-6 md:px-32 py-12 mx-auto">
         <h2 className="text-3xl font-semibold mb-6">About</h2>
         <p className="text-lg text-gray-300 leading-relaxed">
-          Abhinav Sharma is a visionary founder passionate about leveraging
-          technology to solve some of the world`s biggest challenges. With a strong
-          focus on clean energy, quantum computing, and artificial intelligence,
-          Abhinav drives innovative research to make a positive impact globally.
+          Abhinav Sharma is the founder of Necrozma Labs. His main areas of work are clean energy, quantum computing, and artificial intelligence. Abhinav aims to build new technologies that can make the world better and more sustainable. He brings together ideas from different fields to turn bold ideas into real solutions.
         </p>
       </section>
 

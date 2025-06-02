@@ -1,8 +1,15 @@
-"use client";
+
 import React from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import '../style.css'
+
+export const metadata = {
+  title: "Nfuse | Necrozma Labs",
+  description:
+    "Project Nfuse aims to revolutionize solar energy with the Nfuse Cell, a next-generation solar cell that is highly efficient, cost-effective, and sustainable. Join us in making solar energy the primary energy source across the globe.",
+  keywords: "Nfuse, solar energy, renewable energy, clean technology, Necrozma Labs",
+};
 
 const description = `
 

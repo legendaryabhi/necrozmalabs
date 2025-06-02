@@ -65,36 +65,66 @@ const Header = () => {
           ☰
         </button>
         {menuOpen && (
-          <div className="absolute top-20 left-0 w-full bg-black text-white px-6 py-4 flex flex-col gap-2 z-50">
-            <div className="relative">
-              <button
-                onClick={() => setDropdownOpen(!dropdownOpen)}
-                className="hover:text-gray-400 focus:outline-none w-full text-left"
-              >
-                Projects
-              </button>
-              {dropdownOpen && (
-                <div className="pl-4 mt-2">
-                  <Link href="/Nfuse" className="block py-1">
-                    Nfuse
-                  </Link>
-                  <Link href="/BuildY" className="block py-1">
-                    BuildY
-                  </Link>
-                  <Link href="/ViewAI" className="block py-1">
-                    ViewAI
-                  </Link>
-                </div>
-              )}
-            </div>
-            <Link href="/About" className="hover:text-gray-400">
-              About
-            </Link>
-            <Link href="/Updates" className="hover:text-gray-400">
-              Updates
-            </Link>
-          </div>
-        )}
+  <div className="absolute top-20 left-0 w-full bg-black text-white px-6 py-4 flex flex-col gap-2 z-50">
+    <div className="relative">
+      <button
+        onClick={() => setDropdownOpen(!dropdownOpen)}
+        className="hover:text-gray-400 focus:outline-none w-full text-left"
+      >
+        Projects
+      </button>
+      {dropdownOpen && (
+        <div className="pl-4 mt-2">
+          <Link
+            href="/Nfuse"
+            className="block py-1"
+            onClick={() => {
+              setMenuOpen(false);
+              setDropdownOpen(false);
+            }}
+          >
+            Nfuse
+          </Link>
+          <Link
+            href="/BuildY"
+            className="block py-1"
+            onClick={() => {
+              setMenuOpen(false);
+              setDropdownOpen(false);
+            }}
+          >
+            BuildY
+          </Link>
+          <Link
+            href="/ViewAI"
+            className="block py-1"
+            onClick={() => {
+              setMenuOpen(false);
+              setDropdownOpen(false);
+            }}
+          >
+            ViewAI
+          </Link>
+        </div>
+      )}
+    </div>
+    <Link
+      href="/About"
+      className="hover:text-gray-400"
+      onClick={() => setMenuOpen(false)}
+    >
+      About
+    </Link>
+    <Link
+      href="/Updates"
+      className="hover:text-gray-400"
+      onClick={() => setMenuOpen(false)}
+    >
+      Updates
+    </Link>
+  </div>
+)}
+
       </div>
 
       {/* Social Icons (Desktop Only) */}

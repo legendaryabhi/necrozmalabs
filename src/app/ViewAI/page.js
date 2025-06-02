@@ -1,5 +1,11 @@
 import Image from "next/image";
 
+export const metadata = {
+  title : "ViewAI | Necrozma Labs",
+  description: "ViewAI is an advanced AI system by Necrozma Labs, leveraging the Mixture of Experts architecture to redefine artificial intelligence.",
+  keywords: "ViewAI, Necrozma Labs, Mixture of Experts, AI, artificial intelligence, innovation",
+};
+
 export default function ViewAI() {
   return (
     <div className="bg-black text-white min-h-screen px-6 md:px-12 py-10">

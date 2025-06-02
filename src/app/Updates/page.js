@@ -1,5 +1,11 @@
 import Image from "next/image";
 
+export const metadata = {
+  title :"Summer Updates | Necrozma Labs",
+  description: "Discover the latest updates from Necrozma Labs this summer, including the launch of BuildY, an open-source platform for innovation.",
+  keywords: "summer updates, BuildY, open-source, innovation, Necrozma Labs",
+};
+
 export default function Update() {
   return (
     <div className="bg-black text-white min-h-screen px-6 md:px-12 py-10">

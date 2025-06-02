@@ -1,5 +1,12 @@
 import Image from "next/image";
 
+export const metadata = {
+  title: "BuildY | Necrozma Labs",
+  description:
+    "BuildY is an open-source platform by Necrozma Labs, designed to foster innovation in AI, Biotechnology, Quantum Computing, and more. Join us in building the future together.",
+  keywords: "BuildY, open-source, innovation, AI, Biotechnology, Quantum Computing, Necrozma Labs",
+}
+
 export default function BuildY() {
   return (
     <div className="bg-black text-white min-h-screen px-6 md:px-52 py-30">
@@ -11,15 +18,17 @@ export default function BuildY() {
       </h2>
 
       {/* Image Collage Section */}
-      <div className="w-full h-[50vh] relative mb-10">
-        <Image
-          src="/buildy/1.png"
-          alt="Image 1"
-          fill
-          style={{ objectFit: "cover" }}
-          className="absolute top-0 left-0 right-0 bottom-0"
-        />
-      </div>
+      <div className="w-full mb-10">
+  <Image
+    src="/buildy/1.png"
+    alt="Image 1"
+    width={1200}
+    height={600}
+    className="w-full h-auto object-cover"
+    priority
+  />
+</div>
+
 
       {/* Storytelling Section */}
       <p className="text-lg text-gray-300 mb-6">

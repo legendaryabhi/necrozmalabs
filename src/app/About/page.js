@@ -1,5 +1,13 @@
 import Image from "next/image";
 
+export const metadata = {
+  title: "About | Necrozma Labs",
+  description:
+    "Learn about Necrozma Labs, our mission, vision, and how we are leveraging AI and Quantum Computing to solve global challenges.",
+  keywords: "Necrozma Labs, About, AI, Quantum Computing, Innovation",
+
+}
+
 export default function About() {
   return (
     <div className="bg-black text-white min-h-screen px-6 md:px-12 py-10">

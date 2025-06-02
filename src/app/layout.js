@@ -1,5 +1,3 @@
-"use client";
-
 import Head from "next/head";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -16,39 +14,41 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const metadata = {
+// Meta data
+export const metadata = {
   title: "Necrozma Labs",
-  description: "Solving the world's biggest problems with technology. We focus on clean energy, quantum computing, and AI to create a sustainable future.",
+  description: "Solving the world's biggest problems with technology. We focus on clean energy, quantum computing, and AI to create a sustainable future. Join us in our mission to innovate for a better tomorrow.",
   keywords: "clean energy, quantum computing, AI, sustainable technology, Necrozma Labs, innovation, necrozma, necrozmalabs",
   author: "Abhinav Sharma",
   url: "https://www.necrozmalabs.com",
-  image: "/logo.svg", // Replace with your actual OG image path if any
+  image: "/logo.svg",
+  openGraph: {
+    title: "Necrozma Labs",
+    description: "Solving the world's biggest problems with technology. We focus on clean energy, quantum computing, and AI to create a sustainable future.",
+    url: "https://www.necrozmalabs.com",
+    type: "website",
+    images: [
+      {
+        url: "/logo.svg",
+        width: 1200,
+        height: 630,
+        alt: "Necrozma Labs Logo",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Necrozma Labs",
+    description: "Solving the world's biggest problems with technology. We focus on clean energy, quantum computing, and AI to create a sustainable future.",
+    creator: "@abhinavsharma",
+    images: ["/logo.svg"],
+  },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <Head>
-        <title>{metadata.title}</title>
-        <meta name="description" content={metadata.description} />
-        <meta name="keywords" content={metadata.keywords} />
-        <meta name="author" content={metadata.author} />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-        {/* Open Graph / Facebook */}
-        <meta property="og:title" content={metadata.title} />
-        <meta property="og:description" content={metadata.description} />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content={metadata.url} />
-        <meta property="og:image" content={metadata.image} />
-
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={metadata.title} />
-        <meta name="twitter:description" content={metadata.description} />
-        <meta name="twitter:image" content={metadata.image} />
-      </Head>
-
+    
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased flex`}>
         <div className="w-full">
           <Header />
