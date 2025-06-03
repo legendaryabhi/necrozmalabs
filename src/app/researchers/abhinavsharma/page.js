@@ -3,6 +3,7 @@ import React from "react";
 const researchesData = [
   { title: "NFuse Cell: A High-Efficiency 4-Terminal Perovskite–Silicon Tandem Solar Cell for Next-Generation Sustainable Energy", link: "https://www.necrozmalabs.com/papers/Nfuse_cell_paper.pdf" },
   { title:"PATTERNS OF SUBCONSCIOUS RECALL: INVESTIGATING HOW THE MIND RETRIEVES AND ENCODES EXPERIENCE", link: "https://www.necrozmalabs.com/papers/Mind_paper.pdf" },
+  {title: "Critical Review on How Solar Energy Can Replace Fossil Fuels and Nuclear Power", link: "https://www.necrozmalabs.com/papers/Critical_review_on_how_Solar_energy_can_replace_other_alternatives_like_fossil_fuels_and_nuclear_power_.pdf" },
 ];
 
 export const metadata = {
