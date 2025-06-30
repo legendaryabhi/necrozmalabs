@@ -41,7 +41,7 @@ export default function BuildY() {
         Within the Open Research Laboratory, users can explore a wide range of scientific domains — from <strong>quantum computing</strong> and <strong>classical physics</strong> to <strong>data science</strong> and <strong>AI-based modeling</strong>. The lab interface includes a growing collection of virtual equipment and components, available directly through an intuitive dashboard.
       </p>
       <p className="text-lg text-gray-300 mb-6 leading-relaxed">
-        To run an experiment, simply choose your desired components on the lab page, enter the required input parameters, and execute your setup with one click. The results are displayed in real time — whether it's a graph, simulation output, or numerical result. You can also save, edit, and share your experiments with others through the platform.
+        To run an experiment, simply choose your desired components on the lab page, enter the required input parameters, and execute your setup with one click. The results are displayed in real time — whether it is a graph, simulation output, or numerical result. You can also save, edit, and share your experiments with others through the platform.
       </p>
 
       <p className="text-lg text-gray-300 mb-6 leading-relaxed">
@@ -141,7 +141,7 @@ export default function BuildY() {
 
 <h3 className="text-2xl font-semibold mb-4">AI Research Assistant: View AI</h3>
 <p className="text-lg text-gray-300 mb-4">
-  Need help while setting up or analyzing your experiments? Our built-in assistant, <strong>View AI</strong>, is here to support you. Whether you're a beginner or a seasoned researcher, View AI can provide suggestions, generate workflows, explain equipment behavior, or even help debug your experimental setup.
+  Need help while setting up or analyzing your experiments? Our built-in assistant, <strong>View AI</strong>, is here to support you. Whether you are a beginner or a seasoned researcher, View AI can provide suggestions, generate workflows, explain equipment behavior, or even help debug your experimental setup.
 </p>
 <p className="text-lg text-gray-300 mb-6">
   Simply open the <strong>View AI panel</strong> from the lab interface and type your query. It is like having a research collaborator by your side — one that works 24/7.
@@ -164,7 +164,7 @@ export default function BuildY() {
   Open Research Laboratory comes with an extensive and regularly updated documentation portal that walks you through every part of the platform — from basic lab setup to advanced simulation features.
 </p>
 <p className="text-lg text-gray-300 mb-6">
-  Whether you're creating your first experiment or designing complex inter-lab workflows, our documentation ensures that help is always a click away. It covers:
+  Whether you are creating your first experiment or designing complex inter-lab workflows, our documentation ensures that help is always a click away. It covers:
 </p>
 
 <ul className="list-disc list-inside text-lg text-gray-300 space-y-2 mb-12">
