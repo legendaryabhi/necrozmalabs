@@ -42,6 +42,9 @@ const Header = () => {
               <Link href="/Nfuse" className="block px-4 py-2 hover:bg-gray-700">
                 Nfuse
               </Link>
+              <Link href="/openresearchlaboratory" className="block px-4 py-2 hover:bg-gray-700">
+                Open Research Laboratory
+              </Link>
               <Link href="/BuildY" className="block px-4 py-2 hover:bg-gray-700">
                 BuildY
               </Link>
@@ -84,6 +87,16 @@ const Header = () => {
             }}
           >
             Nfuse
+          </Link>
+          <Link
+            href="/openresearchlaboratory"
+            className="block py-1"
+            onClick={() => {
+              setMenuOpen(false);
+              setDropdownOpen(false);
+            }}
+          >
+            Open Research Laboratory
           </Link>
           <Link
             href="/BuildY"

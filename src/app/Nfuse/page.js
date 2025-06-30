@@ -47,7 +47,7 @@ Nfuse (Est.) █ 5 (Target)
 _Source: IPCC, Nfuse R&D estimates_
 
 
-## 🚀 Our Vision: The Nfuse Cell
+## Our Vision: The Nfuse Cell
 
 The **Nfuse Cell** is a new type of solar cell designed to **outperform traditional photovoltaic cells** in efficiency, longevity, and affordability.
 

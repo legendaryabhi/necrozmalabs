@@ -29,6 +29,7 @@ export default function Footer() {
             <li><Link href="/Nfuse" className="hover:text-gray-400">Nfuse</Link></li>
             <li><Link href="/BuildY" className="hover:text-gray-400">Build Y</Link></li>
             <li><Link href="/ViewAI" className="hover:text-gray-400">View AI</Link></li>
+            <li><Link href="/openresearchlaboratory" className="hover:text-gray-400">Open Research Laboratory</Link></li>
           </ul>
           <h3 className="text-lg font-semibold mt-4 md:mt-8 mb-4">Build Y</h3>
           <ul className="space-y-2">

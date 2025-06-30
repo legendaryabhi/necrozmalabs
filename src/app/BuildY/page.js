@@ -3,137 +3,90 @@ import Image from "next/image";
 export const metadata = {
   title: "BuildY | Necrozma Labs",
   description:
-    "BuildY is an open-source platform by Necrozma Labs, designed to foster innovation in AI, Biotechnology, Quantum Computing, and more. Join us in building the future together.",
-  keywords: "BuildY, open-source, innovation, AI, Biotechnology, Quantum Computing, Necrozma Labs",
-}
+    "BuildY is an open-access research platform by Necrozma Labs, enabling scientists and engineers to publish, collaborate, and build upon shared knowledge.",
+  keywords: "BuildY, research sharing, collaboration, open science, innovation, Necrozma Labs",
+};
 
 export default function BuildY() {
   return (
     <div className="bg-black text-white min-h-screen px-6 md:px-52 py-30">
-      <h1 className="text-4xl font-bold mb-6 text-center md:text-left">
-        BuildY
-      </h1>
+      <h1 className="text-4xl font-bold mb-6 text-center md:text-left">Build Y</h1>
       <h2 className="text-xl mb-6 text-center md:text-left">
-        An Open-Source Playground for Breakthrough Inventions
+        Scientific Research Collaboration Platform
       </h2>
 
-      {/* Image Collage Section */}
+      {/* Main Visual */}
       <div className="w-full mb-10">
-  <Image
-    src="/buildy/1.png"
-    alt="Image 1"
-    width={1200}
-    height={600}
-    className="w-full h-auto object-cover"
-    priority
-  />
-</div>
+        <Image
+          src="/buildy/buildy.png"
+          alt="BuildY Research Visualization"
+          width={1200}
+          height={600}
+          className="w-full h-auto object-cover"
+          priority
+        />
+      </div>
 
-
-      {/* Storytelling Section */}
       <p className="text-lg text-gray-300 mb-6">
-        The world is changing faster than ever. With every passing day,
-        engineers, scientists, and visionaries push the boundaries of what’s
-        possible. But for those who dream of building the future, one challenge
-        remains: <strong>access</strong>. Access to cutting-edge tools,
-        knowledge, and a community that thrives on collaboration.
+       Build Y is a platform for scientific research collaboration, connecting researchers and innovators to accelerate breakthroughs. Join us to share ideas, find collaborators, and drive innovation in science and technology. 
       </p>
 
       <p className="text-lg text-gray-300 mb-6">
-        That’s where <strong>BuildY</strong> was born. Created by{" "}
-        <strong>Necrozma Labs</strong>, BuildY isn’t just another platform. It’s
-        a movement—a space where the brightest minds come together to explore,
-        create, and shape the world of tomorrow.
+        The platform was created to address a growing need in the scientific ecosystem: a space
+        where researchers can openly share their research and collaborate across disciplines and
+        geographies without institutional or financial barriers.
       </p>
 
-      <h2 className="text-2xl font-bold mt-8 mb-4">A Hub of Innovation</h2>
-      <p className="text-lg text-gray-300">
-        Imagine a place where groundbreaking ideas in{" "}
-        <strong>AI, Biotechnology, Quantum Computing</strong>, and more are not
-        locked behind paywalls or patents. A place where open-source innovation
-        is not just encouraged but celebrated.
-      </p>
-
+      <h2 className="text-2xl font-bold mt-8 mb-4">Contribute to Ongoing Research</h2>
       <p className="text-lg text-gray-300 mb-6">
-        BuildY is that place. It brings together researchers, developers, and
-        creators from across the world, offering them an ever-evolving
-        repository of cutting-edge projects and insights.
+        Each experiment or project on BuildY is open to contributions from the community.
+        Researchers can submit enhancements, validate results, add supplementary data, or provide
+        implementation improvements. Every contribution is credited, and collaboration is tracked
+        transparently to ensure proper attribution.
       </p>
 
+      <h2 className="text-2xl font-bold mt-8 mb-4">Use Research in Your Work</h2>
       <p className="text-lg text-gray-300 mb-6">
-        A scientist in Japan, an engineer in Germany, and a student in India can
-        collaborate seamlessly, sharing their expertise to create something
-        greater than themselves. No locked doors, no gatekeeping—everyone is
-        welcome to contribute, and everyone benefits. Knowledge is no longer a
-        privilege but a shared resource, updated constantly to keep pace with
-        the world’s latest breakthroughs.
+        In addition to contributing, users can also reuse published research. Authors can mark
+        specific components—such as procedures, datasets, simulation models, or derived equations—as
+        reusable. These blocks can be directly imported into new experiments, enabling researchers
+        to build faster and avoid duplication of effort.
       </p>
 
-      <h2 className="text-2xl font-bold mt-8 mb-4">
-        Who stands to gain from this?
-      </h2>
-
+      <h2 className="text-2xl font-bold mt-8 mb-4">Why Build Y?</h2>
       <p className="text-lg text-gray-300 mb-6">
-        For engineers and scientists, BuildY is the missing piece of the
-        puzzle—the platform where bold ideas meet the tools needed to bring them
-        to life. Students and educators find in BuildY an ever-evolving learning
-        hub, filled with resources that transcend traditional textbooks.
-        <br />
-        <br /> And for the entrepreneurs and innovators shaping the next wave
-        of technology, BuildY offers the perfect ground to build, test, and
-        refine solutions that can change the world.
-        <br />
-        <br />
-        This is more than a platform. It’s a call to action. A call to create,
-        to collaborate, and to redefine the limits of what’s possible.
-        <br />
-        <br />
-        Welcome to BuildY—where the future is being built, together. 🚀
+        BuildY fosters a collaborative research culture where sharing is the default. The platform
+        provides tools for:
+        <ul className="list-disc list-inside mt-3">
+          <li>Publishing research in a clean, markdown-based format</li>
+          <li>Adding modular, reusable content blocks for others to build upon</li>
+          <li>Tracking contributions from collaborators with full transparency</li>
+          <li>Promoting interdisciplinary collaboration at a global scale</li>
+        </ul>
       </p>
 
-      <h2 className="text-2xl font-bold mt-8 mb-4">Usage License</h2>
+      <h2 className="text-2xl font-bold mt-8 mb-4">Open-Access Licensing</h2>
       <p className="text-lg text-gray-300 mb-6">
-        The ideas presented on Build Y are intended to be free and open-source, aligning with our commitment to fostering innovation without barriers. Users are encouraged to utilize, modify, and share these concepts, provided that appropriate credit is given to the original contributors.
-        <br />
-        <br />
-        This open-access model is designed to stimulate collaborative development and rapid technological advancement.
+        All content published on BuildY is available under open-access terms. Users are free to
+        explore, adapt, and redistribute the material, provided that appropriate credit is given to
+        the original authors. This model is designed to advance rapid and ethical knowledge-sharing.
       </p>
 
-      <h2 className="text-2xl font-bold mt-8 mb-4">Credits & Transparency</h2>
+      <h2 className="text-2xl font-bold mt-8 mb-4">Submission Guidelines</h2>
       <p className="text-lg text-gray-300 mb-6">
-        All ideas featured in Build Y are based on publicly available research and contributions from the open-source scientific community. Full credits to original researchers, developers, and contributors are provided:
-        <br />
-        <br />
-        📜 Check the full credits page here:{" "}
-        <a
-          href="https://buildy.necrozmalabs.com/credits/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-blue-400 hover:text-blue-500"
-        >
-          See here
-        </a>
-        <br />
-        <br />
-        We prioritize transparency and ensure that all resources are properly credited.
+        Build Y accepts contributions from scientists, engineers, academic researchers, and students.
+        Projects can include theoretical research, experimental reports, simulations, prototypes, or
+        open-source tools. Submissions are reviewed for quality, originality, and clarity before
+        being published.
       </p>
 
-      <h2 className="text-2xl font-bold mt-8 mb-4">
-        Submit your idea to Build Y
-      </h2>
-      <p className="text-lg text-gray-300 mb-6">
-        We welcome contributions from innovators, engineers, and scientists worldwide! You can submit your ideas to Build Y by opening an issue on our GitHub repository.
-      </p>
-
-      <h2 className="text-2xl font-bold mt-8 mb-10">
-        Graphics created for Build Y
-      </h2>
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-12">
-        {["2", "3", "4", "5", "6"].map((num) => (
+      <h2 className="text-2xl font-bold mt-8 mb-4">Visual Highlights</h2>
+      <div className="grid grid-cols-2 md:grid-cols-3 bg-gray-800 p-10 rounded-4xl gap-4 mb-12">
+        {["1", "2", "3", "4", "5"].map((num) => (
           <Image
             key={num}
             src={`/buildy/${num}.png`}
-            alt={`Image ${num}`}
+            alt={`BuildY Visual ${num}`}
             width={400}
             height={300}
             style={{ objectFit: "cover" }}
@@ -142,13 +95,20 @@ export default function BuildY() {
         ))}
       </div>
 
+      
+
+      <h2 className="text-2xl font-bold mt-8 mb-4">Join the Community</h2>
+      <p className="text-lg text-gray-300 mb-6">
+        Build Y is designed for the global research community.
+      </p>
+
       <a
         href="https://buildy.necrozmalabs.com"
         target="_blank"
         rel="noopener noreferrer"
         className="text-blue-400 hover:text-blue-500"
       >
-        You can visit Build Y by clicking here...
+        Visit the Build Y platform to get started.
       </a>
     </div>
   );

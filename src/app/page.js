@@ -10,7 +10,7 @@ export default function HomePage() {
       <div className="flex flex-col md:flex-row justify-center items-center mb-20 " style={{ height: "60vh" }}>
         {/* Text */}
         <div className="md:w-1/2 text-center md:text-left mb-10 md:mb-0">
-          <h1 className="text-4xl md:text-5xl leading-snug">
+          <h1 className="text-4xl mt-20 md:mt-0 md:text-5xl leading-snug">
             Solving<br />World`s biggest problems<br /> with Technology
           </h1>
           <p className="text-lg mt-6">Making Earth Liveable again.</p>
@@ -28,47 +28,59 @@ export default function HomePage() {
 
       {/* Projects Section */}
       <div className="w-full py-20">
+
+        <div className="w-full h-[50vh] bg-gray-900 flex flex-col items-center justify-center text-center  rounded-xl shadow-lg mb-40 mt-20 md:mt-0 p-8">
+          <h2 className="text-2xl md:text-4xl font-bold">
+            Necrozma Labs Research Ecosystem
+          </h2>
+          <Link href="/necrozma-labs-ecosystem">
+            <button className="mt-6 px-6 py-3 text-lg font-semibold bg-gray-800 text-white rounded-lg hover:bg-gray-950 transition">
+              Created for researchers, by researchers
+            </button>
+          </Link>
+        </div>
+
         <h1 className="text-2xl md:text-4xl mb-10">Our Projects:</h1>
 
         <div className="flex flex-col md:flex-row gap-6">
           {/* Left Big Project */}
-          <Link href="/Nfuse" className="md:w-4/5 w-full">
+          <Link href="/openresearchlaboratory" className="md:w-4/5 w-full">
             <div className="relative h-60 md:h-[550px] rounded-lg overflow-hidden group">
               <Image
                 src="/img1.jpeg"
-                alt="Project Nfuse"
+                alt="Open Research Laboratory"
                 fill
                 className="object-cover"
               />
               <div className="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <p className="text-white text-xl sm:text-3xl font-semibold text-center px-4">
-                  Creating Unlimited Sustainable Energy
+                  We Redefined the Research...
                 </p>
               </div>
             </div>
             <h2 className="text-xl font-bold mt-4 text-center md:text-left">
-              Project Nfuse
+              Open Research Laboratory
             </h2>
           </Link>
 
           {/* Right Two Smaller Projects */}
           <div className="md:w-1/5 w-full flex flex-col gap-6">
-            <Link href="/ViewAI">
+            <Link href="/Nfuse">
               <div className="relative h-48 md:h-60 rounded-lg overflow-hidden group">
                 <Image
                   src="/img2.jpeg"
-                  alt="View AI"
+                  alt="Nfuse "
                   fill
                   className="object-cover"
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <p className="text-white text-lg font-semibold text-center px-4">
-                    Most Advanced A.I System Ever
+                    Creating Unlimited Sustainable Energy
                   </p>
                 </div>
               </div>
               <h2 className="text-lg font-bold mt-4 text-center md:text-left">
-                View AI
+                Project Nfuse
               </h2>
             </Link>
 
@@ -131,16 +143,7 @@ export default function HomePage() {
         </div>
 
         {/* CTA Section */}
-        <div className="w-full h-[50vh] bg-gray-900 flex flex-col items-center justify-center text-center mt-28 rounded-xl shadow-lg p-8">
-          <h2 className="text-2xl md:text-4xl font-bold">
-            Created for Engineers and Scientists
-          </h2>
-          <Link href="https://buildy.necrozmalabs.com/">
-            <button className="mt-6 px-6 py-3 text-lg font-semibold bg-gray-800 text-white rounded-lg hover:bg-gray-950 transition">
-              Visit Build Y
-            </button>
-          </Link>
-        </div>
+        
 
         {/* Placeholder Section */}
         <div className=" flex mt-20 flex-col">
