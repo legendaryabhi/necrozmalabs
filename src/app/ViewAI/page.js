@@ -58,7 +58,7 @@ export default function ViewAI() {
       <p className="text-lg text-gray-300 mb-6">
         The age of artificial intelligence is here, and ViewAI is at its
         forefront. Are you ready to be part of this revolution? Step into a
-        world where AI is more than just a tool—it’s the key to unlocking the
+        world where AI is more than just a tool it is the key to unlocking the
         impossible.
       </p>
       <br></br>

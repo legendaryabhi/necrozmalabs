@@ -25,7 +25,7 @@ export default function About() {
       {/* Introduction */}
       <h1 className="text-4xl  mb-6">About Necrozma Labs</h1>
       <p className="text-lg text-gray-300 mb-6">
-        Necrozma Labs is a pioneering research organization dedicated to solving the world`s most pressing challenges through Artificial Intelligence (AI) and Quantum Computing. Our mission is to push humanity forward by developing solutions that not only address current needs but also anticipate future demands.
+        Necrozma Labs is a Research and Development Company dedicated to solving the world`s most pressing challenges through Artificial Intelligence (AI) and Quantum Computing. Our mission is to push humanity forward by developing solutions that not only address current needs but also anticipate future demands.
       </p>
 
       {/* Vision */}
@@ -35,7 +35,7 @@ export default function About() {
 
       {/* Join Us */}
       <p className="text-lg text-gray-300 mb-6">
-        We welcome researchers, engineers, and innovators to collaborate with us in solving global challenges. Let’s harness the power of AI and quantum computing to build a brighter, sustainable future.
+        We welcome researchers, engineers, and innovators to collaborate with us in solving global challenges. Let`s harness the power of AI and quantum computing to build a brighter, sustainable future.
       </p>
 
       {/* Contact Section */}

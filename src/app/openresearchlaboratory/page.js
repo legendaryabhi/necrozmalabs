@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export const metadata = {
   title: "Open Research Laboratory | Necrozma Labs",
@@ -38,10 +39,10 @@ export default function BuildY() {
       {/* Features Section */}
       <h3 className="text-2xl font-semibold mb-4 ">How It Works</h3>
       <p className="text-lg text-gray-300 mb-6 leading-relaxed">
-        Within the Open Research Laboratory, users can explore a wide range of scientific domains — from <strong>quantum computing</strong> and <strong>classical physics</strong> to <strong>data science</strong> and <strong>AI-based modeling</strong>. The lab interface includes a growing collection of virtual equipment and components, available directly through an intuitive dashboard.
+        Within the Open Research Laboratory, users can explore a wide range of scientific domains — from <strong>quantum computing</strong> and <strong>Quantum Communications</strong> to <strong>Clean Energy</strong> and <strong>AI-based modeling</strong>. The lab interface includes a growing collection of virtual equipment and components, available directly through an intuitive dashboard.
       </p>
       <p className="text-lg text-gray-300 mb-6 leading-relaxed">
-        To run an experiment, simply choose your desired components on the lab page, enter the required input parameters, and execute your setup with one click. The results are displayed in real time — whether it is a graph, simulation output, or numerical result. You can also save, edit, and share your experiments with others through the platform.
+        To run an experiment, simply choose your desired lab on the experiment page, create the components using View AI and hit "Run". The platform simulates the entire setup in real-time, providing instant feedback and results.
       </p>
 
       <p className="text-lg text-gray-300 mb-6 leading-relaxed">
@@ -63,49 +64,21 @@ export default function BuildY() {
           priority
         />
       </div>
-<h3 className="text-2xl font-semibold  mb-4"> Labs</h3>
-      <ul className="flex flex-col gap-4 mb-8 text-gray-300 text-lg">
-        <li><strong>Physics</strong> — Simulate circuits, optics, and mechanics</li>
-        <li><strong>Quantum</strong> — Explore quantum circuits and algorithms</li>
-        <li> <strong>Chemistry</strong> - Model chemical reactions and molecular structures</li>
-        and more!
-      </ul>
-      
+<h3 className="text-2xl font-semibold mb-4">Labs</h3>
+<p className="text-gray-300 text-lg mb-8">
+  At ORL, we have specialized research labs focused on cutting-edge fields such as 
+  <strong>Quantum</strong>, <strong>Nuclear Fusion</strong>, <strong>Clean Energy</strong>, and more. 
+  Each lab is designed to provide the tools, resources, and environment necessary for researchers 
+  to explore, innovate, and push the boundaries of scientific discovery.
+</p>
 
-            {/* Experiments */}
+
 
       <h3 className="text-2xl font-semibold  mb-4">Experiments: The Core of Research</h3>
       <p className="text-lg text-gray-300 mb-4">
-        Experiments are the building blocks of research in the Open Research Laboratory. Each experiment represents a self-contained setup where you can test hypotheses, validate models, or learn through simulation.
+       An experiment in Open Research Laboratory is a virtual representation of a scientific test. You can include a single component (like a Multimeter) or multiple devices to conduct complex simulations. Think of it like setting up a real lab table — choose your tools and run your test.
       </p>
-      <p className="text-lg text-gray-300 mb-4">
-        You can include a single component (like a Multimeter) or multiple devices to simulate complex systems. Think of it like setting up a real lab bench — just virtually.
-      </p>
-      <p className="text-lg text-gray-300 mb-8 italic">
-        Example: “Test the waveform output of a function generator on an oscilloscope.”
-      </p>
-
-
-      {/* Workflows */}
-      <h3 className="text-2xl font-semibold mb-4">Workflows: Simulating a Full Research Pipeline</h3>
-      <div className="md:w-1/2 w-full mb-10">
-        <Image
-          src="/orl/4.png"
-          alt="Open Research Laboratory Interface"
-          width={1200}
-          height={600}
-          className="w-full h-auto object-cover rounded-lg shadow-xl"
-          priority
-        />
-      </div>
-
-      <p className="text-lg text-gray-300 mb-4">
-        A workflow allows you to chain multiple components or stages together, creating a full scientific pipeline. This is especially useful for simulations that involve input/output stages or inter-lab processes.
-      </p>
-      <p className="text-lg text-gray-300 mb-4">
-        For example, a quantum signal can be generated → amplified → analyzed → visualized — all through a single workflow.
-      </p>
-
+      
     
 
       {/* Credit System */}
@@ -115,7 +88,7 @@ export default function BuildY() {
         Open Research Laboratory operates on a transparent credit-based model to support sustainable usage and fair access for all users.
       </p>
       <ul className="list-disc list-inside text-lg text-gray-300 space-y-2 mb-6">
-        <li>All new users receive <strong>100 free credits</strong></li>
+        <li>All new users receive <strong>50 free credits</strong></li>
         <li>Each component costs between <strong>3–10 credits</strong></li>
         <li>Setup is free; credits are only charged when you run the simulation</li>
         <li>Saved experiments can be re-run (credits apply)</li>
@@ -151,11 +124,10 @@ export default function BuildY() {
   <li>Ask for step-by-step guidance on setting up experiments</li>
   <li>Get explanations of circuit behavior, optics simulations, or quantum mechanics</li>
   <li>Receive personalized component recommendations</li>
-  <li>Automatically generate full workflows with a single request</li>
 </ul>
 
 <p className="text-lg text-gray-300 mb-12 italic">
-  Example: “Design a workflow to analyze the interference pattern of a double-slit experiment.”
+  Example: “Design a experiment to make a Tri-bases QKD Protocol.”
 </p>
 
 {/* Documentation Support */}
@@ -177,7 +149,7 @@ export default function BuildY() {
 
 <p className="text-lg text-gray-300 italic mb-12">
   You can access documentation anytime via the Help menu or at:{" "}
-  <a href="https://documentation.necrozmalabs.com" className="text-green-400 hover:underline">/docs</a>
+  <a href="https://documentation.necrozmalabs.com" className="text-green-400 hover:underline">documentation.necrozmalabs.com"</a>
 </p>
 
 

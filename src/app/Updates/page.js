@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 export const metadata = {
-  title :"Summer Updates | Necrozma Labs",
+  title :"Season Updates | Necrozma Labs",
   description: "Discover the latest updates from Necrozma Labs this summer, including the launch of BuildY, an open-source platform for innovation.",
   keywords: "summer updates, BuildY, open-source, innovation, Necrozma Labs",
 };
@@ -15,7 +15,7 @@ export default function Update() {
       <div className="w-full mb-8">
         <Image
           src="/summerupdate.png" // Update this with the correct image path
-          alt="Summer Updates - BuildY"
+          alt=" Updates - Necrozma labs"
           layout="responsive"
           width={800}
           height={400}
@@ -28,15 +28,11 @@ export default function Update() {
         As summer unfolds, so does innovation!
         <br></br>
         <br></br>
-         This season, <strong>Necrozma Labs</strong> is thrilled to introduce <strong>Build Y</strong>—an open-source playground where groundbreaking inventions take shape. <a href="/BuildY" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-500">Learn more here</a>.
+         This season, <strong>Necrozma Labs</strong> is thrilled to introduce <span className="text-green-500">Necrozma Labs Research Suite</span>  <strong>(Build Y and Open Research Laboratory)</strong> an ecosystem where groundbreaking inventions take shape. <a href="/necrozma-labs-research-suite" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-500">Learn more here</a>.
       </p> 
 
       {/* Visit BuildY Button */}
-      <div className="flex  mt-8">
-        <a href="https://buildy.necrozmalabs.com" target="_blank" rel="noopener noreferrer" className=" text-white font-bold  shadow-md transition">
-          Visit BuildY
-        </a>
-      </div>
+      
     </div>
   );
 }

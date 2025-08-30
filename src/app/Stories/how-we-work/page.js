@@ -7,7 +7,7 @@ export default function HowWeWork() {
       <div className="text-center mb-10">
         <h1 className="text-4xl font-bold">How We Work</h1>
         <p className="text-lg text-gray-400 mt-2">
-          Our approach to solving the world’s biggest problems with AI and Quantum Computing.
+          Our approach to solving the world`s biggest problems with AI and Quantum Computing.
         </p>
       </div>
 

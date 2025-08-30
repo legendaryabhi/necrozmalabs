@@ -28,7 +28,7 @@ export default function BuildY() {
       </div>
 
       <p className="text-lg text-gray-300 mb-6">
-       Build Y is a platform for scientific research collaboration, connecting researchers and innovators to accelerate breakthroughs. Join us to share ideas, find collaborators, and drive innovation in science and technology. 
+       Build Y is a platform for scientific research collaboration, connecting researchers and innovators to accelerate breakthroughs.  
       </p>
 
       <p className="text-lg text-gray-300 mb-6">
@@ -57,20 +57,15 @@ export default function BuildY() {
       <p className="text-lg text-gray-300 mb-6">
         BuildY fosters a collaborative research culture where sharing is the default. The platform
         provides tools for:
-        <ul className="list-disc list-inside mt-3">
-          <li>Publishing research in a clean, markdown-based format</li>
-          <li>Adding modular, reusable content blocks for others to build upon</li>
-          <li>Tracking contributions from collaborators with full transparency</li>
-          <li>Promoting interdisciplinary collaboration at a global scale</li>
-        </ul>
+      <br></br>
+          Publishing research in a clean, markdown-based format<br></br>
+          Adding modular, reusable content blocks for others to build upon<br></br>
+          Tracking contributions from collaborators with full transparency<br></br>
+          Promoting interdisciplinary collaboration at a global scale<br></br>
+      
       </p>
 
-      <h2 className="text-2xl font-bold mt-8 mb-4">Open-Access Licensing</h2>
-      <p className="text-lg text-gray-300 mb-6">
-        All content published on BuildY is available under open-access terms. Users are free to
-        explore, adapt, and redistribute the material, provided that appropriate credit is given to
-        the original authors. This model is designed to advance rapid and ethical knowledge-sharing.
-      </p>
+      
 
       <h2 className="text-2xl font-bold mt-8 mb-4">Submission Guidelines</h2>
       <p className="text-lg text-gray-300 mb-6">
