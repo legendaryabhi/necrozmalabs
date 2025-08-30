@@ -42,7 +42,7 @@ export default function BuildY() {
         Within the Open Research Laboratory, users can explore a wide range of scientific domains — from <strong>quantum computing</strong> and <strong>Quantum Communications</strong> to <strong>Clean Energy</strong> and <strong>AI-based modeling</strong>. The lab interface includes a growing collection of virtual equipment and components, available directly through an intuitive dashboard.
       </p>
       <p className="text-lg text-gray-300 mb-6 leading-relaxed">
-        To run an experiment, simply choose your desired lab on the experiment page, create the components using View AI and hit "Run". The platform simulates the entire setup in real-time, providing instant feedback and results.
+        To run an experiment, simply choose your desired lab on the experiment page, create the components using View AI and hit <span className="text-green-500">Run. </span>The platform simulates the entire setup in real-time, providing instant feedback and results.
       </p>
 
       <p className="text-lg text-gray-300 mb-6 leading-relaxed">
@@ -149,7 +149,7 @@ export default function BuildY() {
 
 <p className="text-lg text-gray-300 italic mb-12">
   You can access documentation anytime via the Help menu or at:{" "}
-  <a href="https://documentation.necrozmalabs.com" className="text-green-400 hover:underline">documentation.necrozmalabs.com"</a>
+  <a href="https://documentation.necrozmalabs.com" className="text-green-400 hover:underline">documentation.necrozmalabs.com</a>
 </p>
 
 
