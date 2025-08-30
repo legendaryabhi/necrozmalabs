@@ -2,6 +2,8 @@
 import Link from "next/link";
 import { FaLinkedin, FaTwitter } from "react-icons/fa";
 import { useState, useRef } from "react";
+import { FiChevronDown, FiChevronUp } from "react-icons/fi";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 const Header = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -16,7 +18,7 @@ const Header = () => {
   const handleMouseLeave = () => {
     timeoutRef.current = setTimeout(() => {
       setDropdownOpen(false);
-    }, 1000); // 1 second delay before hiding
+    }, 1000);
   };
 
   return (
@@ -26,23 +28,25 @@ const Header = () => {
         Necrozma Labs
       </Link>
 
-      {/* Navigation */}
+      {/* Desktop Navigation */}
       <nav className="hidden md:flex items-center gap-8 ml-6">
-        {/* Projects Dropdown with Hover Delay */}
         <div
           className="relative"
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         >
-          <button className="hover:text-gray-400 focus:outline-none">
-            Projects
+          <button className="hover:text-gray-400 focus:outline-none flex items-center gap-1">
+            Projects <FiChevronDown size={16} />
           </button>
           {dropdownOpen && (
             <div className="absolute bg-black text-white mt-2 rounded shadow-lg py-2 z-50 w-40">
               <Link href="/Nfuse" className="block px-4 py-2 hover:bg-gray-700">
                 Nfuse
               </Link>
-              <Link href="/openresearchlaboratory" className="block px-4 py-2 hover:bg-gray-700">
+              <Link
+                href="/openresearchlaboratory"
+                className="block px-4 py-2 hover:bg-gray-700"
+              >
                 Open Research Laboratory
               </Link>
               <Link href="/BuildY" className="block px-4 py-2 hover:bg-gray-700">
@@ -64,80 +68,91 @@ const Header = () => {
 
       {/* Mobile Menu */}
       <div className="md:hidden">
-        <button className="text-3xl" onClick={() => setMenuOpen(!menuOpen)}>
-          ☰
-        </button>
-        {menuOpen && (
-  <div className="absolute top-20 left-0 w-full bg-black text-white px-6 py-4 flex flex-col gap-2 z-50">
-    <div className="relative">
-      <button
-        onClick={() => setDropdownOpen(!dropdownOpen)}
-        className="hover:text-gray-400 focus:outline-none w-full text-left"
-      >
-        Projects
-      </button>
-      {dropdownOpen && (
-        <div className="pl-4 mt-2">
-          <Link
-            href="/Nfuse"
-            className="block py-1"
-            onClick={() => {
-              setMenuOpen(false);
-              setDropdownOpen(false);
-            }}
-          >
-            Nfuse
-          </Link>
-          <Link
-            href="/openresearchlaboratory"
-            className="block py-1"
-            onClick={() => {
-              setMenuOpen(false);
-              setDropdownOpen(false);
-            }}
-          >
-            Open Research Laboratory
-          </Link>
-          <Link
-            href="/BuildY"
-            className="block py-1"
-            onClick={() => {
-              setMenuOpen(false);
-              setDropdownOpen(false);
-            }}
-          >
-            BuildY
-          </Link>
-          <Link
-            href="/ViewAI"
-            className="block py-1"
-            onClick={() => {
-              setMenuOpen(false);
-              setDropdownOpen(false);
-            }}
-          >
-            ViewAI
-          </Link>
-        </div>
-      )}
-    </div>
-    <Link
-      href="/About"
-      className="hover:text-gray-400"
-      onClick={() => setMenuOpen(false)}
-    >
-      About
-    </Link>
-    <Link
-      href="/Updates"
-      className="hover:text-gray-400"
-      onClick={() => setMenuOpen(false)}
-    >
-      Updates
-    </Link>
-  </div>
-)}
+<button
+  className="w-8 h-8 flex items-center justify-center rounded hover:bg-gray-700 transition"
+  onClick={() => setMenuOpen(!menuOpen)}
+>
+  {menuOpen ? <FaTimes size={20} /> : <FaBars size={20} />}
+</button>
 
+        {menuOpen && (
+          <div className="absolute top-20 left-0 w-full bg-black text-white px-6 py-4 flex flex-col gap-2 z-50">
+            {/* Projects with Expand */}
+            <div className="relative">
+              <button
+                onClick={() => setDropdownOpen(!dropdownOpen)}
+                className="hover:text-gray-400 focus:outline-none w-full text-left flex items-center justify-between"
+              >
+                Projects
+                {dropdownOpen ? (
+                  <FiChevronUp size={18} />
+                ) : (
+                  <FiChevronDown size={18} />
+                )}
+              </button>
+              {dropdownOpen && (
+                <div className="pl-4 mt-2">
+                  <Link
+                    href="/Nfuse"
+                    className="block py-1"
+                    onClick={() => {
+                      setMenuOpen(false);
+                      setDropdownOpen(false);
+                    }}
+                  >
+                    Nfuse
+                  </Link>
+                  <Link
+                    href="/openresearchlaboratory"
+                    className="block py-1"
+                    onClick={() => {
+                      setMenuOpen(false);
+                      setDropdownOpen(false);
+                    }}
+                  >
+                    Open Research Laboratory
+                  </Link>
+                  <Link
+                    href="/BuildY"
+                    className="block py-1"
+                    onClick={() => {
+                      setMenuOpen(false);
+                      setDropdownOpen(false);
+                    }}
+                  >
+                    BuildY
+                  </Link>
+                  <Link
+                    href="/ViewAI"
+                    className="block py-1"
+                    onClick={() => {
+                      setMenuOpen(false);
+                      setDropdownOpen(false);
+                    }}
+                  >
+                    ViewAI
+                  </Link>
+                </div>
+              )}
+            </div>
+
+            {/* Other Links */}
+            <Link
+              href="/About"
+              className="hover:text-gray-400"
+              onClick={() => setMenuOpen(false)}
+            >
+              About
+            </Link>
+            <Link
+              href="/Updates"
+              className="hover:text-gray-400"
+              onClick={() => setMenuOpen(false)}
+            >
+              Updates
+            </Link>
+          </div>
+        )}
       </div>
 
       {/* Social Icons (Desktop Only) */}
