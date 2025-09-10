@@ -37,7 +37,7 @@ const Profile = () => {
         href="mailto:abhinav@example.com"
         className="text-blue-400 hover:underline"
       >
-        abhinav@necrozmalabs.com
+        abhinav at this site domain.
       </a>
     </p>
     <p className="text-base sm:text-lg">
