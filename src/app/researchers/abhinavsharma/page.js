@@ -23,7 +23,7 @@ const Profile = () => {
 >
   {/* Left: Picture */}
   <img
-    src="https://media.licdn.com/dms/image/v2/D5603AQHyDX37TQDgQA/profile-displayphoto-shrink_800_800/B56ZOnHwe5GgAc-/0/1733675649747?e=1753920000&v=beta&t=B269HrN46pTbnpm-bHROjYoYVF39QAXA5YBDwLICHUY"
+    src="/researchers/abhinav.png"
     alt="Abhinav Sharma"
     className="w-40 h-40 p-10 sm:w-48 sm:h-48 md:w-64 md:h-64 rounded-lg object-cover"
   />
@@ -44,7 +44,7 @@ const Profile = () => {
       <strong>Affiliation:</strong> Founder, Necrozma Labs
     </p>
     <p className="text-base sm:text-lg">
-      <strong>Research Areas:</strong> Clean Energy, Quantum Computing, AI
+      <strong>Research Areas:</strong> Clean Energy, Quantum Physics, AI
     </p>
   </div>
 </div>
@@ -54,7 +54,7 @@ const Profile = () => {
       <section className="px-6 md:px-32 py-12 mx-auto">
         <h2 className="text-3xl font-semibold mb-6">About</h2>
         <p className="text-lg text-gray-300 leading-relaxed">
-          Abhinav Sharma is the founder of Necrozma Labs. His main areas of work are clean energy, quantum computing, and artificial intelligence. Abhinav aims to build new technologies that can make the world better and more sustainable. He brings together ideas from different fields to turn bold ideas into real solutions.
+          Abhinav Sharma is the founder of Necrozma Labs. His main areas of work are clean energy, quantum physics, and artificial intelligence. Abhinav aims to build new technologies that can make the world better and more sustainable. He brings together ideas from different fields to turn bold ideas into real solutions.
         </p>
       </section>
 
