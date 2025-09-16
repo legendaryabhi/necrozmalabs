@@ -66,11 +66,10 @@ export default function Page() {
         />
 
         <p className="text-gray-300 mb-4">
-          Build Y is a scientific research collaboration platform where you can do science together. 
-            Publish experiments, invite contributions, and build faster with reusable blocks.
+          Build Y is a dedicated platform for theoretical researchers, created by Necrozma Labs. It is a space where researchers can publish their early ideas, collaborate with other researhcers and refine theories through open contributions and structured discussions.
          </p>
         <p className="text-gray-400 italic">
-          Built by Necrozma Labs, empowering researchers to collaborate and accelerate discoveries.
+          Unlike general platforms, Build Y is highly focused and restricted to verified researchers only, ensuring credibility and meaningful collaboration.<br></br> It is designed to make theoretical research more open, connected, and collaborative from the very beginning of an idea.
           </p>
 
           <Link href="https://buildy.necrozmalabs.com" target="_blank">
